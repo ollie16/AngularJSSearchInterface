@@ -1,0 +1,154 @@
+<div id="header">
+
+	
+<div class ="navbar navbar-fixed-top">
+
+<div class= "container-fluid">
+	
+	<button class = "navbar-toggle" data-toggle ="collapse" data-target= ".navHeaderCollapse">
+		<span class = "icon-bar"></span>
+		<span class = "icon-bar"></span>
+		<span class = "icon-bar"></span>
+	</button>
+<div class="collapse navbar-collapse navHeaderCollapse">
+<ul class ="nav navbar-nav navbar-left">
+<li><a href="#">Help</a></li>
+</ul>
+
+<ul class ="nav navbar-nav navbar-right">
+<li><a href="#">Sign Up</a></li>
+<li><a href="#">Login</a></li>
+
+</ul>
+</div>
+	
+</div>
+</div>
+ 
+</div>
+<br>
+<br>
+<body>
+<div ng-controller = "SecondController">
+<div class="container">
+
+	
+<div class="row">
+
+<div class="col-sm-6 col-md-6 col-lg-6 text-center">
+
+ 	<div class="panel panel-default">
+ 	<input type="text" ng-model="query" />	
+    <div class="panel-heading, element"><b>Search Results: ungrouped</b></div>
+    <div class="panel-body">
+
+<table class="table table-condensed table-striped table-hover">
+<tbody>
+<tr>
+<td><b>Title</b></td>
+<td><b>Description</b></td>
+<td><b>URL</b></td>
+</tr>
+<tr ng-repeat= "div1 in model | filter:query ">
+
+<td class="element">{{div1.Title}}</td>
+<td class="element">{{div1.Description}}</td>
+<td class="element"><a href="{{div1.Url}}" target="_blank">Link</a></td>
+
+<td class ="element"> <a href="" ng-click = "removeName(div1)"><span class="glyphicon glyphicon-remove-sign"></span></a></td>
+
+</tr>
+</tbody>
+</table>
+<
+</div>
+</div>
+</div>
+
+<div class="col-sm-6 col-md-6 col-lg-6 text-center">
+<div id="panel1">
+ 	<div class="panel panel-default">
+ 	
+    <div class="panel-heading, offbodiestitle"><b>Search Results: Grouped by official bodies</b></div>
+    <div class="panel-body">
+
+	<div class= "groupheight">
+
+ <div ng-repeat="divPerUrL in urlsToFilter() | filter:filterurls">
+      <span style="display:block"> <b>{{divPerUrL.Url}}</b></span>
+        
+        <li ng-repeat="div1 in model | filter:{Url: divPerUrL.Url}">{{div1.Title}}</li>  
+        <span>&nbsp;</span>      
+    </div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+ 
+
+
+</div>
+
+
+</div>
+</div>
+</div>
+</body>
+<div id="footer">
+
+
+	<div class ="navbar navbar-fixed-bottom">
+
+<div class= "container-fluid">
+<ul class ="nav navbar-nav navbar-left">
+<div id="navaboutusfeed"><a href="#" class= "navbar-button btn-info btn pull-left margin-top"> About Us</a>
+<a href="#" class= "navbar-button btn-info btn pull-left margin-top"> Feedback</a></div>
+<div id="navaboutus"><li><a href="#">About Us</a></li></div>
+</ul>
+<ul class ="nav navbar-nav navbar-right">
+<li><a href="#">Privacy Terms</a></li>
+<li><a href="#">Settings</a></li>
+</ul>
+	
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+  
+  

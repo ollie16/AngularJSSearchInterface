@@ -1,0 +1,88 @@
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div id="header">
+
+	
+<div class ="navbar navbar-fixed-top">
+
+<div class= "container-fluid">
+	
+	<button class = "navbar-toggle" data-toggle ="collapse" data-target= ".navHeaderCollapse">
+		<span class = "icon-bar"></span>
+		<span class = "icon-bar"></span>
+		<span class = "icon-bar"></span>
+	</button>
+<div class="collapse navbar-collapse navHeaderCollapse">
+<ul class ="nav navbar-nav navbar-left">
+<li><a href="#">Help</a></li>
+</ul>
+
+<ul class ="nav navbar-nav navbar-right">
+<li><a href="#">Sign Up</a></li>
+<li><a href="#">Login</a></li>
+
+</ul>
+</div>
+	
+
+</div>
+ </div>
+</div>
+
+<br>
+<br>
+<body>
+<div ng-controller = "Controller">
+<div class= "container">
+	
+<div class="row">
+
+<div class="col-md-3 text-center">
+<div id="menutitles"> <a href="#" class= "navbar-button btn-info btn pull-left margin-top"> Top Searches</a> <div id="firstmenuitem">News </div><div id="secondmenuitem"> Weather</div><div id="thirdmenuitem"> Movies</div><div id="fourthmenuitem"> More </div></div>  </div>
+
+
+<div class="col-md-6">
+<div id="centralsection">
+<div class="row ">
+<div class= "col-md-12 text-center">   
+<h3><span id="firstword">KC </span><span id="secondword">Search </span><span id="thirdword">System </span><span id="fourthword">UK </span> </h3>
+
+	<div id="searchboxtitles">  <h4><span>Web </span><span> Images </span><span> Video </span><span> News </span><span> Maps</span> </h4></div>  
+        <div id="inputbox"><input type="text" id="searchBox" ng-model="query" placeholder="Enter your search terms..." /></div>
+            
+        <div id="submitbuttons"><button  value='Submit' ng-disabled='query == null'  ng-click='click("/viewResults")'>Submit</button>
+             <button ng-click="reset()" >Clear </button></div>
+</div>
+</div>
+</div>
+</div>
+ <div class="col-md-3">
+
+</div>
+</div> 
+</div>
+</div>     
+</body>
+<div id="footer">
+
+
+<div class ="navbar navbar-fixed-bottom">
+
+<div class= "container-fluid">
+<ul class ="nav navbar-nav navbar-left">
+<div id="navaboutusfeed"><a href="#" class= "navbar-button btn-info btn pull-left margin-top"> About Us</a>
+<a href="#" class= "navbar-button btn-info btn pull-left margin-top"> Feedback</a></div>
+<div id="navaboutus"><li><a href="#">About Us</a></li></div>
+</ul>
+<ul class ="nav navbar-nav navbar-right">
+<li><a href="#">Privacy Terms</a></li>
+<li><a href="#">Settings</a></li>
+</ul>
+	
+<
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>

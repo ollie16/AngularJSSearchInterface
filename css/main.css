@@ -1,0 +1,171 @@
+
+
+/* code for body of document */
+body {
+background: url('../housesofparliament.jpg') no-repeat center center fixed;/* change image here; ensure image is in same folder*/
+ 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;    
+  -o-background-size: cover;	
+	background-size: cover;	
+	min-height: 100%;
+  height:100%;
+  height: auto !important;
+  margin-bottom:-100px;
+}
+
+/*navbar to display help login and signup links when pages are in a responsive format */
+.navbar .navbar-toggle .icon-bar {
+    background-color: black;
+}
+.navbar-nav >li>a { 
+    color:#ffffff; /* color = white */
+}
+
+.navbar-nav >div>li>a { 
+    color:#ffffff; /* color = white */
+}
+
+
+.groupheight{
+
+height: 100%;/*  height of panel in results page*/
+overflow-y: auto;/* autoscroll on y axis*/
+overflow-x: auto;/* autoscroll on x axis*/
+ font-size:10px;
+ margin-top:35px;
+}
+
+.group{
+  font-size:10px;
+}
+
+.margin-left-top{
+    margin-left: 10px !important;
+    margin-top: 5px !important;
+  
+    
+}
+.margin-top{
+margin-top: 5px !important; 
+     
+}
+
+#footer {/* set colour between 0 and 1*/
+opacity:1;
+height:100px;
+width:100%;
+}
+
+#header {/* set colour between 0 and 1*/
+opacity:1;
+
+
+
+}
+
+#searchBox{ /* set width on search box on home page*/
+width:300px;  
+}
+
+#firstword{
+  color:black;/* set colour of first word "KC" of titles in Low Dimension*/
+  
+}
+#secondword{/* set colour of second word "Search" of titles in Low Dimension*/
+  color:black;
+
+}
+#thirdword{/* set colour of third word "System" of titles in Low Dimension*/
+color:black;
+
+}
+#fourthword{/* set colour of fourth word "UK" of titles in Low Dimension*/
+color:black;
+
+}
+
+#submitbuttons{
+  margin-top:3px;
+}
+
+
+#viewresulttitle,#viewresulttitle>a {/* set colour of view results title in results page*/
+color: #ffffff;
+font-weight:bold; 
+}
+#menutitles{
+display: none;
+visibility: hidden;
+}
+
+#searchboxtitles{
+display: none;
+visibility: hidden; 
+}
+
+#firstmenuitem{ /* set colour of first navigation title in Low Dimension*/
+color:blue;
+margin-top:20px;
+
+}
+#secondmenuitem{ /* set colour of second navigation title in Low Dimension*/
+color:red;
+margin-top:10px;
+}
+#thirdmenuitem{ /* set colour of third navigation title in Low Dimension*/
+color:blue;
+margin-top:10px
+}
+#fourthmenuitem{ /* set colour of fourth navigation title in Low Dimension*/
+color:black;
+margin-top:10px
+}
+
+
+tbody {
+height: auto;/* set height of table*/
+overflow-y: auto;/* set autoscroll of y axis*/
+overflow-x: auto;/* set autoscroll of x axis*/
+
+
+} 
+
+ tr:after {
+            content: ' ';
+            display: block;
+            visibility: hidden;
+            clear: both;
+        }
+
+tbody td{
+  float:left;
+  width:30%;
+
+}
+
+tbody, tr, td{ display: block; }
+
+td {word-wrap:break-word; overflow-x:auto;  }
+
+.element{
+ font-size:10px; 
+
+}
+.offbodiestitle{
+  font-size:10px; 
+  margin-top:30px;
+}
+
+#navaboutusfeed {/* footer link invisible*/
+display: none;
+visibility: hidden; 
+clear:both;
+
+}
+
+#navaboutus {/* footer link visible*/
+margin-left:15px;
+
+}
+
